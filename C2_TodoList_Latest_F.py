@@ -1,7 +1,7 @@
 # Custom Function Definition
 
 import os
-def get_todos(filepath="mytodo/todos.txt"):
+def get_todos(filepath="master/todos.txt"):
 # def get_todos(filepath=os.path.abspath(r"FIles\todos.txt")):
    # os.path.abspath("todos.txt")
     with open(filepath, 'r') as file:
@@ -9,7 +9,7 @@ def get_todos(filepath="mytodo/todos.txt"):
     return todos_local
 
 # def write_todos(todos_arg, filepath=os.path.abspath(r"Files\todos.txt")):
-def write_todos(todos_arg, filepath="mytodo/todos.txt"):
+def write_todos(todos_arg, filepath="master/todos.txt"):
     with open(filepath, 'w') as file:
         todos = file.writelines(todos_arg)
 
